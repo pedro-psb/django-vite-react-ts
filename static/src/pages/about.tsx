@@ -1,7 +1,8 @@
-import { renderPage } from "../components/utils/utils"
+import { renderPage, useDjangoCtx } from "../components/utils/utils"
 
 function App() {
-  return <h1>Hello from About.tsx</h1>
+  const { name } = useDjangoCtx()
+  return <h1>Hello from About.tsx by {name}</h1>
 }
 
 renderPage(<App />)

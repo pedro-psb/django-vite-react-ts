@@ -18,6 +18,9 @@
 </head>
 
 <body>
+  <!-- This (django filter) -->
+  {{ context|json_script:"context-data" }}
+
   <div id='root'></div>
   {% block body %} {% endblock %}
 </body>
