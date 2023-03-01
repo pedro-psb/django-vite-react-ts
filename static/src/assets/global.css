@@ -1,0 +1,28 @@
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  border-bottom: 1px solid #d0d0d0;
+  padding: 20px;
+}
+
+main {
+  margin: auto 0;
+  padding: 10px;
+
+  max-width: 1280px;
+  margin: auto auto;
+}
+
+footer {
+  border-top: 1px solid #d0d0d0;
+  margin: auto auto 0 auto;
+  padding: 20px;
+  width: 100%;
+}

@@ -32,13 +32,17 @@ TODO django part
 ## Wishlist
 
 - [x] Minimum working example
+- [x] Scaffold sample Multi Page Application
 - [ ] Add TypeScript utils to integrate better with django:
     - [ ] Static tag/settings: use a TS functions to correctly load assets, links, etc in dev and prod.
     - [ ] Context Data: use a TS function to provide django context data in SSR time.
-- [ ] Scaffold Multi Page Application and a REST API structure
 - [ ] Add a new branch setting up Mantine UI library
 - [ ] Add CI pipeline with pre-commit, gh action, etc
 - [ ] Use docker?
+
+### minor
+
+- [ ] Transform `add-react.html` partial into django-tag
 
 ## Resources
 
