@@ -33,12 +33,12 @@ TODO django part
 
 - [x] Minimum working example
 - [x] Scaffold sample Multi Page Application
-- [ ] Add TypeScript utils to integrate better with django:
-    - [ ] Context Data: use a TS function to provide django context data in SSR time.
-    - [ ] Static tag/settings: use a TS functions to correctly load assets, links, etc in dev and prod.
+- [x] Context Data: use a TS function to provide django context data in SSR time.
+- [x] Static tag/settings: use a TS functions to correctly load assets, links, etc IN DEV
 - [ ] Add a new branch setting up Mantine UI library
+- [ ] Static tag/settings: fix util to work in prod
+- [ ] Test in production
 - [ ] Add CI pipeline with pre-commit, gh action, etc
-- [ ] Use docker?
 
 ### minor
 

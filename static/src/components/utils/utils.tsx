@@ -36,3 +36,17 @@ export function useDjangoCtx() {
   const context = JSON.parse(context_script_element.textContent || "");
   return context
 }
+
+/**
+* Get the static url as provided by {% static %}
+*
+* WARNING: currently it is just a workaround to dev mode.
+* This does not work in production
+*
+* TODO
+* - devmode improvement: use django-vite settings to build this path dynamically
+* - prod: make it work 
+*/
+export function getStatic(filename: string) {
+  return `http://localhost:3000/static/${filename}`
+}
