@@ -1,17 +1,9 @@
-from django.shortcuts import render
 from django.urls import path
-from django.views.generic import TemplateView as T
 
-
-def template(file: str):
-    return T.as_view(template_name=file)
-
-
-def about_page(request):
-    return render(request, "about.html", context={"context": {"name": "Pedro"}})
-
+from .utils import render_react
 
 urlpatterns = [
-    path("", template("index.html")),
-    path("about", about_page),
+    # path("", template("index.html")),
+    path("", render_react("pages/main.tsx")),
+    path("about", render_react("pages/about.tsx", context={"name": "Pedro Pessoa"})),
 ]

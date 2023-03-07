@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% block head %}
+<!-- includes react tsx -->
+<!-- "react_filename" is provided by the view context -->
+{% load django_vite %} {% vite_asset react_filename %}
+
+{% if page_title %}
+<title>{{ page_title }}</title>
+{% else %}
+<title>Django-Vite Site</title>
+{% endif %}
+<!-- end includes react tsx -->
+{% endblock %}
